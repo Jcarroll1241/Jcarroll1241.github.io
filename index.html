@@ -5,25 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Links</title>
   <style>
-      <style>
-
-  
-
-    body {
-
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
+    body, html {
       margin: 0;
       padding: 0;
+      height: 100%;
       display: flex;
-      flex-direction:column
-      justify-content: center;
-      flex-grow: inherit;
-      align-items: center;
-      height: 100vh;
+      flex-direction: column;
     }
-    .container {
-      text-align: center;
+    .half {
+      width: 100%; /* Full width */
+      height: 50vh; /* Half of the viewport height */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .lilac {
+      background-color: #C8A2C8; /* Lilac color */
+    }
+    .gray {
+      background-color: #D3D3D3; /* Gray color */
     }
     .link-box {
       background-color: #007bff;
@@ -43,29 +43,14 @@
     .link-box:active {
       transform: scale(0.95);
     }
-    .half {
-      width: 100%; /* Full width */
-      height: 70%; /* Half of the height */
-    }
-
-    .lilac {
-      background-color: #C8A2C8; /* Lilac color */
-    }
-
-    .gray {
-      background-color: #D3D3D3; /* Gray color */
-    }
   </style>
 </head>
 <body>
   <div class="half lilac">
-  <div class="container">
-    <a href="https://bsky.app/profile/raiingb.bsky.social" class="link-box" style="text-align:center">bluesky</a>
-  </div></div>
-    <div class="half gray">
-  <div class="container">
-    <a href="https://github.com/Jcarroll1241/F1TelemetryPublicV1/tree/main" class="link-box" style="text-align:center">f1 telemetry project public build</a>
-  </div></div>
+    <a href="https://bsky.app/profile/raiingb.bsky.social" class="link-box">bluesky</a>
+  </div>
+  <div class="half gray">
+    <a href="https://github.com/Jcarroll1241/F1TelemetryPublicV1/tree/main" class="link-box">f1 telemetry project public build</a>
   </div>
 </body>
 </html>
