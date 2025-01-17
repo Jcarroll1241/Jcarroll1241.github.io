@@ -5,7 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Links</title>
   <style>
+      <style>
     body {
+
+    }
+
+
+    body {
+
       font-family: Arial, sans-serif;
       background-color: #f4f4f9;
       margin: 0;
@@ -36,13 +43,29 @@
     .link-box:active {
       transform: scale(0.95);
     }
+        .half {
+      flex: 1; /* Make both halves equal width */
+      height: 100%;
+    }
+
+    .lilac {
+      background-color: #C8A2C8; /* Lilac color */
+    }
+
+    .gray {
+      background-color: #D3D3D3; /* Gray color */
+    }
   </style>
 </head>
 <body>
+  <div class="half lilac">
   <div class="container">
     <a href="https://bsky.app/profile/raiingb.bsky.social" class="link-box">bluesky</a>
+  </div></div>
+    <div class="half gray">
   <div class="container">
     <a href="https://github.com/Jcarroll1241/F1TelemetryPublicV1/tree/main" class="link-box">f1 telemetry project public build</a>
+  </div></div>
   </div>
 </body>
 </html>
